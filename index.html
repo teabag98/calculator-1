@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+  </head>
+  <body>
+    <form class="" action="index.html" method="post" name="calculator">
+      <table>
+        <tr>
+          <td><input type="text" name="display" id="display"></td>
+        </tr>
+        <tr>
+          <td><input type="button" name="one" value="1" onclick="calculator.display.value +='1'"></td>
+          <td><input type="button" name="two" value="2" onclick="calculator.display.value +='2'"></td>
+          <td><input type="button" name="three" value="3" onclick="calculator.display.value +='3'"></td>
+          <td><input type="button" name="plus" value="+" class="operator" onclick="calculator.display.value +='+'"></td>
+        </tr>
+        <tr>
+          <td><input type="button" name="four" value="4" onclick="calculator.display.value +='4'"></td>
+          <td><input type="button" name="five" value="5" onclick="calculator.display.value +='5'"></td>
+          <td><input type="button" name="six" value="6" onclick="calculator.display.value +='6'"></td>
+          <td><input type="button" name="minus" value="-" class="operator" onclick="calculator.display.value +='-'"></td>
+        </tr>
+        <tr>
+          <td><input type="button" name="seven" value="7" onclick="calculator.display.value +='7'"></td>
+          <td><input type="button" name="eight" value="8" onclick="calculator.display.value +='8'"></td>
+          <td><input type="button" name="nine" value="9" onclick="calculator.display.value +='9'"></td>
+          <td><input type="button" name="multiply" value="*" class="operator" onclick="calculator.display.value +='*'"></td>
+        </tr>
+        <tr>
+          <td><input type="button" name="zero" value="0" onclick="calculator.display.value +='0'"></td>
+          <td><input type="button" name="divide" value="/" class="operator" onclick="calculator.display.value +='/'"></td>
+          <td><input type="button" name="equals" value="=" class="operator" onclick="calculator.display.value = eval(calculator.display.value)"></td>          
+        </tr>
+      </table>
+    </form>
+
+  </body>
+</html>
